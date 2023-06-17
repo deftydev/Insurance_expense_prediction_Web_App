@@ -1,0 +1,76 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+<form action="{{url_for('predict_datapoint')}}" method="POST">
+
+  <div class="row g-3 align-items-center"> 
+    <div class="col-auto">
+      <label for="age" class="col-form-label">Age</label>
+    </div>
+    <div class="col-auto">
+      <input type="text" class="form-control" id="age" name="age" placeholder="Enter Your Age">
+    </div>
+  </div>
+
+  
+  
+
+    <div class="form-group">
+        <label for="bmi">BMI:</label>
+        <input type="text" id="bmi" name="bmi" placeholder="Enter Body Mass index value (float)">
+    </div>
+  
+<div class="form-group">
+  <label for="children">Children:</label>
+  <select id="children" name="children">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3+</option>
+  </select>
+</div>
+  
+<div class="form-group">
+  <label for="sex">Gender:</label>
+  <select id="sex" name="sex">
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+  </select>
+</div>
+
+<div class="form-group">
+  <label for="smoker">Do you smoke?</label>
+  <select id="smoker" name="smoker">
+    <option value="yes">Yes</option>
+    <option value="no">No</option>
+  </select>
+</div>
+
+<div class="form-group">
+    <label for="region">Region:</label>
+    <select id="region" name="region">
+      <option value="southwest">southwest</option>
+      <option value="southeast">southeast</option>
+      <option value="northwest">northwest</option>
+      <option value="northeast">northeast</option>
+    </select>
+  </div>
+
+<div style="clear:both;"></div>
+  <input type="submit" value="Submit">
+</form>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
