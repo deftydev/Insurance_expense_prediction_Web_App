@@ -61,7 +61,7 @@ Start the server
 ## Authors
 
 - [@deftdev](https://github.com/deftydev)
-- [@chandansy](https://github.com/chandansy?tab=repositories)
+
 
 
 
