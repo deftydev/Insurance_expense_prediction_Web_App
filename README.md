@@ -28,6 +28,7 @@ Initialize the empty Git repository
   create the repository in github
   git add .
   git commit -m "message"
+git remote add origin <repository_URL>
   git push origin main
 ```
 ## Run Locally
